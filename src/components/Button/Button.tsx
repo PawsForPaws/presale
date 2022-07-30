@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   to,
   variant,
 }) => {
-  const { color, spacing } = useContext(PresaleContext)
+  const { color, spacing } = useContext(ThemeContext)
 
   let buttonColor: string
   switch (variant) {
