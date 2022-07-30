@@ -1,6 +1,6 @@
 import React, { useContext, useMemo } from 'react'
 import styled, { ThemeContext } from 'styled-components'
-
+import ThemeContext from '../contexts/ThemeContext'
 import { Link } from 'react-router-dom'
 
 interface ButtonProps {
