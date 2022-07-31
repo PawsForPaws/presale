@@ -17,7 +17,7 @@ import ERC20ABI from '../../presale/lib/abi/presaleErc20.json'
 import Web3 from 'web3'
 import { AbiItem } from 'web3-utils'
 import Binance from 'binance-api-node'
-import mainImg from '../../assets/img/main.gif'
+import mainImg from '../../assets/img/123453t.gif'
 
 const binance = Binance()
 
@@ -78,8 +78,8 @@ const Home: React.FC = () => {
             <div></div>
             <PageHeader
               icon={<img style={{ width: 150 }} src={mainImg} />}
-              maintitle="Piano-Swap"
-              title="MozartFinance"
+              maintitle="Pause For Paws"
+              title="Public Fundraise/Presale"
               subtitle={wallet.account}
             />
           </div>
@@ -90,7 +90,7 @@ const Home: React.FC = () => {
               </div>
               <div style={{marginTop:'36px', padding:'12px 0', display:'grid', borderBottom:'1px solid rgba(0, 0, 0, 0.3)', }}>
                 <span>Fixed Swap Ratio</span>
-                <span className='boldFont'>1 BNB = 27.5 PIANO</span>
+                <span className='boldFont'>1 BNB = 27.5 PAW</span>
               </div>
               <div style={{display:'flex'}}>
                 <div className='priceState' style={{width:isDesktopOrLaptop?200:"50%"}}>
