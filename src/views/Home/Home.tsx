@@ -35,7 +35,7 @@ const Home: React.FC = () => {
   const getBnbPrice = async () => {
     let ticker = await binance.prices({ symbol: 'BNBUSDT' })
     let price = Number(ticker['BNBUSDT'])
-    setNum(price/27.5)
+    setNum(price/27777.5)
   }
   getBnbPrice()
 
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
             <PageHeader
               icon={<img style={{ width: 150 }} src={mainImg} />}
               maintitle="Pause For Paws"
-              title="Public Presale"
+              title="Trade bnb for PAW(s)"
               subtitle={wallet.account}
             />
           </div>
@@ -90,7 +90,7 @@ const Home: React.FC = () => {
               </div>
               <div style={{marginTop:'36px', padding:'12px 0', display:'grid', borderBottom:'1px solid rgba(0, 0, 0, 0.3)', }}>
                 <span>Fixed Swap Ratio</span>
-                <span className='boldFont'>1 BNB = 27.5 PAW</span>
+                <span className='boldFont'>1 BNB = 27777.5 PAW</span>
               </div>
               <div style={{display:'flex'}}>
                 <div className='priceState' style={{width:isDesktopOrLaptop?200:"50%"}}>
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
               </div>
               <div className="borderLine" />
               <div className="bidAmount">
-                <span style={{fontSize: 15, color: 'black'}}>Your Bid Amount</span>
+                <span style={{fontSize: 15, color: 'black'}}>Your Donation Amount</span>
                 <div style={{display:'flex', color: 'black', fontSize: 15}}>
                   <span>Balance:&nbsp;</span>
                   { wallet && 
