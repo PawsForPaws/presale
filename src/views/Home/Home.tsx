@@ -44,7 +44,7 @@ const Home: React.FC = () => {
   const wallet =  bsc.useWallet()
 
   let description = <div style={{textAlign:'center', fontSize:'26px', fontFamily: 'Optima', color: 'black', lineHeight:'48px', fontWeight:'bold'}}>
-                    <span>Join The Presale</span>
+                    <span>Join The Party!</span>
                     </div>;
 
   const [leftTime, setCountTime] = useState(0)
