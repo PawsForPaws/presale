@@ -35,7 +35,7 @@ const Home: React.FC = () => {
   const getBnbPrice = async () => {
     let ticker = await binance.prices({ symbol: 'BNBUSDT' })
     let price = Number(ticker['BNBUSDT'])
-    setNum(price/27777.5)
+    setNum(price/277777.5)
   }
   getBnbPrice()
 
@@ -90,7 +90,7 @@ const Home: React.FC = () => {
               </div>
               <div style={{marginTop:'36px', padding:'12px 0', display:'grid', borderBottom:'1px solid rgba(0, 0, 0, 0.3)', }}>
                 <span>Fixed Swap Ratio</span>
-                <span className='boldFont'>1 BNB = 27777.5 PAW</span>
+                <span className='boldFont'>1 BNB = 277777.5 PAW</span>
               </div>
               <div style={{display:'flex'}}>
                 <div className='priceState' style={{width:isDesktopOrLaptop?200:"50%"}}>
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
               </div>
               <div className="borderLine" />
               <div className="bidAmount">
-                <span style={{fontSize: 15, color: 'black'}}>Your Donation Amount</span>
+                <span style={{fontSize: 15, color: 'black'}}>Your Donation:</span>
                 <div style={{display:'flex', color: 'black', fontSize: 15}}>
                   <span>Balance:&nbsp;</span>
                   { wallet && 
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
                   <span>BNB</span>
                 </div>
               </div>
-              <Input type='number' onChange={depositInputChange} style={{width: '100%', bottom: 10, color: 'black', marginTop: 30, marginBottom: 0, }} placeholder='Bid Amount' />
+              <Input type='number' onChange={depositInputChange} style={{width: '100%', bottom: 10, color: 'black', marginTop: 30, marginBottom: 0, }} placeholder='Donation Amount' />
               <div style={{marginTop:'50px'}}>
                 <Button disabled ={!account} text="Deposit" onClick={depositEther} variant="secondary" />
               </div>
