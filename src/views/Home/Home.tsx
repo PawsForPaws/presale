@@ -90,7 +90,7 @@ const Home: React.FC = () => {
               </div>
               <div style={{marginTop:'36px', padding:'12px 0', display:'grid', borderBottom:'1px solid rgba(0, 0, 0, 0.3)', }}>
                 <span>Fixed Swap Ratio</span>
-                <span className='boldFont'>1 BNB = 600 PAW</span>
+                <span className='boldFont'>1 BNB = 600 PAWs</span>
               </div>
               <div style={{display:'flex'}}>
                 <div className='priceState' style={{width:isDesktopOrLaptop?200:"50%"}}>
