@@ -22,7 +22,7 @@ import mainImg from '../../assets/img/123453t.gif'
 const binance = Binance()
 
 let startTime = new Date()
-let endTime = new Date('03/23/2021 5:16')
+let endTime = new Date('08/15/2022 5:16')
 let launchTime = Math.abs(startTime.getTime() - endTime.getTime())
 
 const Home: React.FC = () => {
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
   const getBnbPrice = async () => {
     let ticker = await binance.prices({ symbol: 'BNBUSDT' })
     let price = Number(ticker['BNBUSDT'])
-    setNum(price/277777.5)
+    setNum(price/600)
   }
   getBnbPrice()
 
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
   const wallet =  bsc.useWallet()
 
   let description = <div style={{textAlign:'center', fontSize:'26px', fontFamily: 'Optima', color: 'black', lineHeight:'48px', fontWeight:'bold'}}>
-                    <span>Join The Party!</span>
+                    <span>Join The Presale!</span>
                     </div>;
 
   const [leftTime, setCountTime] = useState(0)
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
             <PageHeader
               icon={<img style={{ width: 150 }} src={mainImg} />}
               title="Pause For Paws"
-              maintitle="Donate bnb-Earn PAW(s)"
+              maintitle="Swap BNB for PAWs"
               subtitle={wallet.account}
             />
           </div>
@@ -90,7 +90,7 @@ const Home: React.FC = () => {
               </div>
               <div style={{marginTop:'36px', padding:'12px 0', display:'grid', borderBottom:'1px solid rgba(0, 0, 0, 0.3)', }}>
                 <span>Fixed Swap Ratio</span>
-                <span className='boldFont'>1 BNB = 277777.5 PAW</span>
+                <span className='boldFont'>1 BNB = 600 PAW</span>
               </div>
               <div style={{display:'flex'}}>
                 <div className='priceState' style={{width:isDesktopOrLaptop?200:"50%"}}>
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
               </div>
               <div className="borderLine" />
               <div className="bidAmount">
-                <span style={{fontSize: 15, color: 'black'}}>Your Donation:</span>
+                <span style={{fontSize: 15, color: 'black'}}>Contribution:</span>
                 <div style={{display:'flex', color: 'black', fontSize: 15}}>
                   <span>Balance:&nbsp;</span>
                   { wallet && 
@@ -135,9 +135,9 @@ const Home: React.FC = () => {
                   <span>BNB</span>
                 </div>
               </div>
-              <Input type='number' onChange={depositInputChange} style={{width: '100%', bottom: 10, color: 'black', marginTop: 30, marginBottom: 0, }} placeholder='Donation Amount' />
+              <Input type='number' onChange={depositInputChange} style={{width: '100%', bottom: 10, color: 'black', marginTop: 30, marginBottom: 0, }} placeholder='Bid Amount' />
               <div style={{marginTop:'50px'}}>
-                <Button disabled ={!account} text="Deposit" onClick={depositEther} variant="secondary" />
+                <Button disabled ={!account} text="Swap" onClick={depositEther} variant="secondary" />
               </div>
             </StyledContainerR>
           </div>
