@@ -21,7 +21,7 @@ import mainImg from '../../assets/img/123453t.gif'
 
 const binance = Binance()
 
-let startTime = new Date()
+let startTime = new Date('08/10/2022 5:16')
 let endTime = new Date('08/15/2022 5:16')
 let launchTime = Math.abs(startTime.getTime() - endTime.getTime())
 
