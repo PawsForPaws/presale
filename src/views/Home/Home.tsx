@@ -17,7 +17,7 @@ import ERC20ABI from '../../presale/lib/abi/presaleErc20.json'
 import Web3 from 'web3'
 import { AbiItem } from 'web3-utils'
 import Binance from 'binance-api-node'
-import mainImg from '../../assets/img/123453t.gif'
+import mainImg from '../../assets/img/Pause-for-Paws-Banner.gif'
 
 const binance = Binance()
 
