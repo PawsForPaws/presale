@@ -79,7 +79,7 @@ const Home: React.FC = () => {
             <PageHeader
               icon={<img style={{ width: 150 }} src={mainImg} />}
               title="Pause For Paws"
-              maintitle="Swap BNB for PAWs"
+              maintitle="  Swap BNB for PAWs"
               subtitle={wallet.account}
             />
           </div>
